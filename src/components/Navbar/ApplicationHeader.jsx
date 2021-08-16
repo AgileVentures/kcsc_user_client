@@ -39,7 +39,7 @@ const ApplicationHeader = () => {
   const landingPage = useRouteMatch("/home");
   const { appData, appDataFetched } = useSelector((state) => state);
   const { main_tabs, secondary_tabs } = appData.navigation;
-  let currentUrl = useLocation()
+  // let currentUrl = useLocation()
 
   useEffect(() => {
     const fetchApplicationData = async () => {
