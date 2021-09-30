@@ -49,10 +49,12 @@ const ApplicationHeader = () => {
     fetchApplicationData();
     AdaptiveHelper.muiActiveTabSelect(
       currentUrl,
+      main_tabs,
       setActiveMainTab,
-      setActiveSecondaryTab
+      setActiveSecondaryTab,
+      setParent
     );
-  }, [appDataFetched, currentUrl, setActiveMainTab, setActiveSecondaryTab]);
+  }, [appDataFetched, main_tabs, currentUrl, setActiveMainTab, setActiveSecondaryTab]);
 
   const handleChangeSecondary = (event, newValue) => {
     setActiveSecondaryTab(newValue);
@@ -65,8 +67,7 @@ const ApplicationHeader = () => {
       data-cy={`${Functions.toKebabCase(tab.label)}-tab`}
       label={tab.label}
       component={Link}
-      to={tab.link}
-      onClick={() => setParent(`${tab.label}`)}
+      to={tab.link}    
     />
   ));
 
