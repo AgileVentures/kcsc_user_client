@@ -37,7 +37,7 @@ export default InformationCard;
 
 const styles = {
   fullHeight: {
-    height: "100%",
+    height: "250px",
   },
   cardContent: {
     padding: "30px 20px",

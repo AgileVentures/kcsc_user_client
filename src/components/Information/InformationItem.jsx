@@ -55,7 +55,7 @@ const styles = {
     minHeight: "148px",
   },
   fullHeight: {
-    height: "100%",
+    height: "150px",
   },
   cardContent: {
     padding: "30px 20px",
