@@ -52,7 +52,7 @@ export default InformationItem;
 
 const styles = {
   card: {
-    minHeight: "148px",
+    minHeight: "150px",
   },
   fullHeight: {
     height: "150px",
